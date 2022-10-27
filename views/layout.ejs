@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Comatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <%- body  %>
+
+    </div>
+    <script>
+
+        document.querySelectorAll('.video-container video').forEach(vid => {
+            // document.querySelector('.popup-video').style.display = 'block';
+            vid.onclick = () => {
+
+                document.querySelector('.popup-video').style.display = 'block';
+                document.querySelector('.popup-video video').src = vid.getAttribute('src');
+
+
+            }
+
+        });
+
+        document.querySelector('.popup-video span').onclick = () => {
+
+            document.querySelector('.popup-video').style.display = 'none';
+            document.querySelector('.container .video-container .video').closest;
+
+
+        }
+
+
+        document.querySelector('.popup-video').onclick = () => {
+
+            document.querySelector('.popup-video').style.display = 'none';
+        }
+
+    </script>
+
+
+
+</body>
+</html>

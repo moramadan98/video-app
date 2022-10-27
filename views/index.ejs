@@ -1,0 +1,11 @@
+<h1>Videos</h1>
+
+<div class="video-container">
+    <% for( let video of videos) { %>
+    <div class="video"> <video src="videos/<%= video %> " muted controls></video></div>
+    <% } %>
+</div>
+<div class="popup-video">
+    <span>&times;</span>
+    <video src="videos/vid-1.mp4" autoplay controls></video>
+</div>
