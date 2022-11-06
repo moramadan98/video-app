@@ -6,6 +6,7 @@ const app = express();
 
 
 app.use(express.static(path.join(__dirname , "assets")));
+app.use(express.static(path.join(__dirname , "media")));
 
 app.use(expressLayout);
 app.set('view engine' , 'ejs');
@@ -13,5 +14,5 @@ app.set('view engine' , 'ejs');
 
 app.use('/',require('./routes/index.router'));
 
-const port = process.env.PORT ||5000;
+const port = process.env.PORT || 5000;
 app.listen(port , ()=>{ console.log(`listening to port ${port}`)});

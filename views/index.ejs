@@ -1,11 +1,20 @@
 <h1>Videos</h1>
 
 <div class="video-container">
-    <% for( let video of videos) { %>
-    <div class="video"> <video src="videos/<%= video %> " muted controls></video></div>
-    <% } %>
-</div>
-<div class="popup-video">
-    <span>&times;</span>
-    <video src="videos/vid-1.mp4" autoplay controls></video>
+  <a
+    href="/videos/ar"
+    class="btn btn-primary btn-lg"
+    tabindex="-1"
+    role="button"
+    aria-disabled="true"
+    >Arabic Videos</a
+  >
+  <a
+    href="/videos/en"
+    class="btn btn-warning btn-lg"
+    tabindex="-1"
+    role="button"
+    aria-disabled="true"
+    >English Videos</a
+  >
 </div>
